@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body style="background-color: black">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <nav
+      class="bg-black px-2 sm:px-4 py-2.5 dark:bg-black fixed w-full z-20 top-0 left-0 dark:bg-black"
+    >
+      <div
+        class="container flex flex-wrap justify-between items-center mx-auto"
+      >
+        <a href="./" class="flex items-center">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAA7AAAAOwBeShxvQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAlMSURBVFiFjVd7cFxVGf+dc1/73k02Ic+ySfPYpGmH0pZSqPaZKS0BqVBEO8gAatGZOAPoMI76ByoMPlAZRcUqUsfOQBGlUB5DIpYEKJKSBmiTNGmatGmSTTbJNpvdvXfv6xz/2Ly2SQvfzJ07c893vt/v+87vnPsdgs9pG8Nhr07ILUxyNQBkLbWNEmIbLkI5oxKfJiIf5zZ5h2mkKSVJzZ2dncnPE5d8lsPa2toiSbGfsNLi19S8GnWybJs/lVdDDG8RVr16t3ndT09JIIA+KSLZ52STH3sSqUFFAsU/mEZ+eby3t/9K8cXLDdxQWurkQeejgPXdgi1T0lSnx9REWYrW3k44nZ1GOJU4JL8FJWjCV63R4ptjfiMmIvJ27n2RFv/9G66t/I1oOX8hy45nVS3V4HA4x1VNbWzr7j4MAMJS4Gvq6ipFD/3AF1a31z407Mxbl6AFm+KS/nGcmWM2jxetFwCg+NRBu6R+TBAcLGu+4GSglSlBWj0tmMPKRmNc+P6mbTuqttTvktdt2Ojr/KTj1kKP5+WhWGyCXgp+XVXVaokaHxU3xMrWf89yBvLdmVwpR9mdUUfBwBF71pcTAvDFCaQMIKEDQsBC/r5hwgmEUFmF/J8XfqUf+NOvrZsadosWITsBIIvAmrq6SurAOxX3j/m27l1FVwVvQ8i7fm6cUJ4lGmpbhAjzDGwGxDRgKp1NiFsglm1heyiupDRD9AUCCqXUDyzQwA2lpU6IxlvFDTFv2Y0yyXdUw+RpXEiemAs01hIwJkq3EgAgzAYxdVFy2TDsTNaqubga3L6yzucIsDznT/zValFpwyRVLYqui28gaUVhMQMAEO90Y+TdAlz40gMKAEjpGOCUWESDwNjiwNwmMIYUTLxczgCWVekD+58GIWSewNra2iLCrcbld0edAMDBMGUMzU2YPO7lvQeutrq3PiWbjhwAgGuyF1KphVnwxPt5iL1WyKCZGTBCuOHLNyM1e4XQuaeyyG3esRutza/ME5AU6wlvhaZooxJsnUIJWADlSI9JGD2aq422X0W7t/9eSeXVzAVxT5y2XeUxAQBSHT5E36wwuxr+IumewlkXAkAGB0IfZhNoaToMJjqrAEDcGA57DVP6SjRWrkVfoFxSJwWqqSI3bYF7vXq07FZxePc9ki25soJ44md0sVp3TbcEEXsrZPXU/3YenAMwAGgzzyV2775GPPfXZ+64vrLyO6JOyC3JnBrz9I4/+ha7wrnENwDAeKje4Xmtw07l1hgDux5x6t4SIA1ARea9xPactQP7nwYBFC4IN4lMcjdcLN/mvbz70hYrr6ex8voMSQvAODJZAwA45HQUlhQAE5RFczfv2I23W4+CWukGESDr1NzKK+6VnMFWOOIXAADTRWuxUAuz4LI6hsLBQwjE2mxZHaFMUbi+5XrdrAhZaEZWgi1Nh0Flp82pcJ1IbL3EcgQuC64kRlD14aMo3jwGbhGMHC3E6U1PIlGwOuMwBQTG3sPyrsdZ4aaLVvEXhmVHoYHRNCdAuxMAziOcFfPefY049P7PhXSvexkVmO5c2fwNwxdpX5KAJ3oSnrCB0J5xlH01irrGPoRbHgFhJqAD7vEeVHT9zL7m4S5atbdfdl+tw6JXEAAyGpCLdMAmTgoAtd8ckFe896AROvE7k1p6lrMaDGO6x4VISy4AwB9WIXpYZklUoLj/b6x67wD1Vc/L/crwGQ1wTgDCGSUiNHcojTWPnZXD4gFr3b92WtX/+5HuH/oA4AxaoAwndz6HviMr0HdwGcAAV7EO59Q5IA14Ur3cvzKVpaHPajJamg6DqxSQeJwKCh/WJyRIfgu1jUPOmh/3imU1Lykrux60V7Xs08EZdG8JPtn5d/QPfBHHvhVGolOC7igEGGDIQWgRKQuALvrHZtu9+xphTsoglI+LtkXaEgOOam+lRgAgUGgivfUifJumBDwJ+IfbEC/dAFv2onvzU8DmmSgpAFPA6LK7hO6Dw/qGx9sVMgP8GfgAAGNIARh5l9oa3oid8M71b4QAHhkA5XCvnxIKhl/Vl4xgZV6ThfUwpx2iFpnf7wsrcLm/IVMFMF14nSqEvJ4865DM6fnmyC1n1tG1KonA4HuiaCQuSyBnvBWClGaOgrlTCGSBCmPPF/JrNl6TPne2xxYIByXgpctCEGXJIJxHhAuTk8ayktxacNT6V6jCbBV0C+AOBpYk1P3px+mxsttEkAXZJAFqagh3PMxWP3RSdASt+TECJI1MmbX/llo3XruF9B57yX5w/ZhYlmPwZ17+xLjrngfEs73dZRQADFN+dKQpx15YBTqDFbhlAj7aKV915kj27rKAnGgr3Febunf5JS3QjKX7XNi0+Sb+2isv0se2DDlynDYaKuN0dTDKwCHounEjBYATnZ19EPFM37NFKpBprfSZzo8IHL7tMRrq3z+vBRsAB9yJHhSv6V/0w7I5wHmmEuAMlBAuLWjdKOGQJAmMMWlOLpNJ/oNEn6N/4M0cPpYC2IJ8nVUqyOS0PPdhtvXiNsgSktdnVsOxXMO7rc1k1617+A+Plmot5z14tiNoH4/mC5ZtMVlRPpireSwWs0vyiv+tDcjfpgFTkYvmRcU1isSxIBuuuy8DpwIwAEWLwKN2pQvWjWfdL+LpTBUEv4X0eZGypGJv2H633Nxtp4Rl2/iWXXc4Duz/g6qrqTuz7gXD0WiqMFBwxOhzfh0CV5SyzNqqnR7Ex2v10fI9mRMnDoABnAjwnD7KQjuH5+JoZkaAc9VbkSTnmlSxo/UEU1yBdO+ZM7S97digpqq3t/X0tC+6GX3U3X3q+pUrq5JHc48Z/c7ywO1RkmgJsvPl+zJrbc0vgeatAFFN0UwKEN02kgYwveDUsBMiYocKOEsI/bZh7Rk81+8wgEhHd/f5WZ8lb0bD0WhKcQb/rGhSTuKdnLVWyo3BtY2USa5M9rMaIBTeix3cmXeWaH4DaWseeLo5iNjzRSZLCE8bLHDbR6dOjQxPTAyNTkzEF2ItSQDIaGJoJPZmsT/voE2dwaLOQ2HfSHtaSKZkwi1wKoMTEYo+QVzJUxBkA+pJD+Jv5NtTR/Ite1x+MZ0Qbj7+6Zl/RiKRJRr3mRwuN3Cp1dXVeVyWdbOl5HyZCfJGwUzlU0uTAU6owtOi27jATNpmJ8QXL1pWU19f39JH+CX2f6uiM7AbTw/wAAAAAElFTkSuQmCC"
+            class="mr-3 h-6 sm:h-9"
+            alt="Flowbite Logo"
+          />
+          <span
+            class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+            >Climate</span
+          >
+        </a>
+        <div class="flex md:order-2">
+          <a
+            type="button"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            href="./subscribe.html"
+          >
+            Subscribe
+          </a>
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky"
+            aria-expanded="false"
+            href="./subscribe.html"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div
+          class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
+          id="navbar-sticky"
+        >
+          <ul
+            class="flex flex-col p-4 mt-4 bg-black rounded-lg border bg-black md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-black dark:bg-gray-800 md:dark:bg-black"
+          >
+            <li>
+              <a
+                href="./"
+                class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="./about.html"
+                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >About</a
+              >
+            </li>
+            <li>
+              <button
+                id="dropdownNavbarLink"
+                data-dropdown-toggle="dropdownNavbar"
+                class="flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+              >
+                Maps
+                <svg
+                  class="ml-1 w-5 h-5"
+                  aria-hidden="true"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownNavbar"
+                class="hidden z-10 w-44 font-normal bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600"
+                style="
+                  position: absolute;
+                  inset: 0px auto auto 0px;
+                  margin: 0px;
+                  transform: translate3d(0px, 310.4px, 0px);
+                "
+                data-popper-reference-hidden=""
+                data-popper-escaped=""
+                data-popper-placement="bottom"
+              >
+                <ul
+                  class="py-1 text-sm text-gray-700 dark:text-gray-400"
+                  aria-labelledby="dropdownLargeButton"
+                >
+                  <li>
+                    <a
+                      href="./aqi.html"
+                      class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >AQI</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./temprature.html"
+                      class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Temprature</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./CO2 Concentration.html"
+                      class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >CO2 Deposition</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./SO2 Mass.html"
+                      class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >SO2 Mass</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./dustMass.html"
+                      class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Dust Mass</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./Ozone Layer.html"
+                      class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Ozone Layer</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <a
+                href="./articles.html"
+                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Articles</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="./programs.html"
+                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Programs</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h1 class="text-5xl mb-8 font-exo" style="color: white; padding-top: 10%">
+      List all articles Here
+    </h1>
+
+    <script src="" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="../path/to/flowbite/dist/flowbite.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+  </body>
+</html>
